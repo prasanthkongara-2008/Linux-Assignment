@@ -1,0 +1,31 @@
+Project Workspace Report
+
+Directory Structure Created
+ProjectWorkspace/
+└── docs/
+    └── plan.txt
+
+File Permissions Before Modification
+Command: ls -l docs/plan.txt
+Output:
+(Paste your terminal output here.)
+
+File Permissions After Modification
+Commands:
+chmod 640 docs/plan.txt
+ls -l docs/plan.txt
+Output:
+(Paste your terminal output here.)
+
+Ownership Details
+Command: ls -ld . docs
+Output:
+(Paste your terminal output here.)
+
+Umask Value Used
+Command: umask
+Output:
+(Paste your terminal output here.)
+
+Explanation:
+The configured permissions protect project data by allowing only the owner to modify files, while limiting access for other users.

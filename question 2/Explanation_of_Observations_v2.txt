@@ -1,0 +1,28 @@
+Explanation of Observations
+
+1. mkdir -p ProjectWorkspace/docs
+I created the project workspace and docs directory.
+
+2. cd ProjectWorkspace
+I changed to the project workspace directory.
+
+3. touch docs/plan.txt
+I created the plan.txt file.
+
+4. ls -R
+I verified the directory structure.
+
+5. ls -l docs/plan.txt
+I viewed the default file permissions.
+
+6. chmod 640 docs/plan.txt
+I changed the file permissions to improve security.
+
+7. ls -l docs/plan.txt
+I confirmed the updated permissions.
+
+8. ls -ld . docs
+I checked ownership and directory permissions.
+
+9. umask
+I displayed the current umask value.
