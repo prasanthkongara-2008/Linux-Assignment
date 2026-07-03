@@ -1,0 +1,36 @@
+Question 1 – Command Explanations
+
+1. whoami
+
+I used the whoami command to display the username of the currently
+logged-in user. The output confirms which user account is active on the
+Linux system.
+
+2. groups
+
+I used the groups command to list all the groups associated with my user
+account. These groups determine the permissions and access rights
+available to the user.
+
+3. echo $SHELL
+
+I used echo $SHELL to display the default shell assigned to my account.
+The output shows the shell program that interprets Linux commands, such
+as /bin/bash.
+
+4. pwd
+
+I used the pwd command to print the current working directory. This
+confirms the location from which I am currently executing commands.
+
+5. ls -la
+
+I used the ls -la command to list all files and directories, including
+hidden files. It also displays useful details such as file permissions,
+ownership, file size, and modification date.
+
+6. ping -c 4 google.com
+
+I used the ping -c 4 google.com command to verify network connectivity.
+Receiving replies with little or no packet loss confirms that the system
+has a working network connection.

@@ -1,0 +1,17 @@
+Linux Environment Verification Report
+
+Username: prasanth
+
+Groups: prasanth sudo adm dip cdrom plugdev
+
+Current Shell: /bin/bash
+
+Current Working Directory: /home/prasanth
+
+Workspace Files: Desktop Documents Downloads Environment_Report.txt
+
+Network Connectivity Verification: PING google.com successful. 4 packets
+transmitted, 4 received, 0% packet loss.
+
+Note: Replace the sample values above with the actual output from your
+own Linux system before submission.
