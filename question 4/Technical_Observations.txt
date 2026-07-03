@@ -1,0 +1,8 @@
+Technical Observations
+
+- The lsof command listed open files used by running processes.
+- The /proc/$$/fd directory displayed active file descriptors.
+- Output redirection (>) stored normal output in output.txt.
+- Error redirection (2>) stored error messages in error.txt.
+- The ulimit -a command displayed the current resource limits.
+- Linux manages file I/O efficiently through file descriptors and the kernel.

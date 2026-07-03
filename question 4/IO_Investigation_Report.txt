@@ -1,0 +1,29 @@
+I/O Investigation Report
+
+1. Open Files Identified
+Command: lsof
+Output:
+(Paste your terminal output here.)
+
+2. File Descriptor Observations
+Command: ls -l /proc/$$/fd
+Output:
+(Paste your terminal output here.)
+
+3. Output and Error Redirection Results
+Commands:
+echo "Test Message" > output.txt
+ls missingfile 2> error.txt
+cat output.txt
+cat error.txt
+
+Observation:
+Standard output was redirected to output.txt and standard error was redirected to error.txt.
+
+4. Resource Limits Observed
+Command: ulimit -a
+Output:
+(Paste your terminal output here.)
+
+5. Explanation
+Linux uses file descriptors (0,1,2) to manage input, output, and errors. Redirection allows output and errors to be stored in separate files for easier troubleshooting.
