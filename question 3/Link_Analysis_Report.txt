@@ -1,0 +1,20 @@
+Link Analysis Report
+
+1. Inode Numbers
+Use 'ls -li' to display inode numbers of the original file, hard link, and symbolic link.
+(Paste your terminal output here.)
+
+2. Comparison Between Hard Link and Symbolic Link
+- Hard links share the same inode as the original file.
+- Symbolic links have a different inode and point to the file path.
+
+3. Effect of Deleting the Original File
+- The hard link continues to access the file contents.
+- The symbolic link becomes broken because its target no longer exists.
+
+4. Metadata Collected
+Use 'stat' to view file metadata such as inode number, permissions, owner, timestamps, and link count.
+(Paste your terminal output here.)
+
+5. Conclusion
+Hard links reference the same file data through the same inode, while symbolic links reference the file path. Hard links remain functional after deleting the original file, but symbolic links do not.
