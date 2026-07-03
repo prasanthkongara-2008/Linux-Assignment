@@ -1,0 +1,39 @@
+Storage Assessment Report
+
+1. Available Storage Devices
+Command Used:
+lsblk
+
+Observation:
+The lsblk command listed the available storage devices and their partitions. It also showed the mount points for each partition.
+
+2. Mounted File Systems
+Command Used:
+mount
+
+Observation:
+The mount command displayed all mounted file systems currently accessible by the operating system.
+
+3. Disk Usage Statistics
+Command Used:
+df -h
+
+Observation:
+The df -h command displayed the total disk size, used space, available space, and usage percentage in a human-readable format.
+
+4. Inode Utilization
+Command Used:
+df -i
+
+Observation:
+The df -i command displayed inode usage for each mounted file system. The inode usage was within normal limits.
+
+5. Storage Health Observations
+The storage devices were detected correctly and mounted successfully. Disk space and inode utilization were within acceptable limits, indicating healthy storage resources.
+
+6. Recommendations for Improving Storage Utilization
+- Regularly monitor disk usage.
+- Remove unnecessary files and logs.
+- Archive old data to free storage space.
+- Monitor inode usage to prevent file creation issues.
+- Schedule regular storage maintenance.

@@ -1,0 +1,50 @@
+========================================================================
+Storage Assessment Commands Explanation
+========================================================================
+
+1. Directory Navigation & Creation
+------------------------------------------------------------------------
+Command: mkdir Question5
+Explanation: "mkdir" (make directory) creates a new folder in the current directory. In this case, it creates a folder named "Question5".
+
+Command: cd Question5
+Explanation: "cd" (change directory) navigates into the specified folder. This moves your current working path into the newly created "Question5" directory.
+
+2. Block Device Listing
+------------------------------------------------------------------------
+Command: lsblk
+Explanation: "lsblk" (list block devices) displays information about all available or specified block devices (like hard drives, flash drives, and their partitions). 
+In the screenshot, it shows:
+- loop devices (loop0 to loop10), which are commonly used in Ubuntu for snap packages.
+- sda (a 3.9G disk) with its partitions (sda1, sda2, sda3).
+- vda (a 64G virtual disk) with its boot partition (vda1) and root partition (vda2).
+
+3. Mounted File Systems
+------------------------------------------------------------------------
+Command: mount
+Explanation: The "mount" command without any arguments lists all currently mounted file systems. It provides detailed information including the device name, the mount point (where it is accessible in the directory tree), the file system type (e.g., ext4, tmpfs, squashfs), and the mount options (like rw for read-write, ro for read-only, etc.).
+
+4. Disk Space Usage
+------------------------------------------------------------------------
+Command: df -h
+Explanation: "df" (disk free) reports the amount of available disk space being used by file systems. 
+- The "-h" flag stands for "human-readable", which formats the sizes into easily understandable units like Megabytes (M) and Gigabytes (G) instead of raw byte counts. 
+- The screenshot shows the root partition (/dev/vda2) is 62G in size and currently 19% used.
+
+5. Inode Usage
+------------------------------------------------------------------------
+Command: df -i
+Explanation: While standard "df" shows physical storage space, "df -i" reports the inode usage. An inode is a data structure on a filesystem that stores information about a file or a directory. Every file consumes one inode. This command tells you how many total files you can create on a filesystem and how many you have already used. 
+- The screenshot shows the root filesystem (/dev/vda2) is only using 6% of its available inodes.
+
+6. Text Editing
+------------------------------------------------------------------------
+Command: vi Storage_Assessment_Report.txt
+Explanation: "vi" is a standard command-line text editor in Linux. This command opens the vi editor to create a new file named "Storage_Assessment_Report.txt" (or edit it if it already exists) so you can write your findings.
+
+7. Displaying File Contents
+------------------------------------------------------------------------
+Command: cat Storage_Assessment_Report.txt
+Explanation: "cat" (concatenate) reads data from the file and outputs its contents directly to the terminal screen. 
+- The screenshot shows the final contents of the report you typed out in the vi editor, which summarizes the observations and recommendations based on the previous commands.
+========================================================================
